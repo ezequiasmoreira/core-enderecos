@@ -1,0 +1,9 @@
+<label for="endereco">Endereços&nbsp;<span class="glyphicon glyphicon-plus botao-adicionar" data-target="#modalEndereco" data-toggle="modal"></span></label>
+<ul class="list-group">
+    <li class="list-group-item" > &nbsp;
+        <span class="btn btn-sm" ng-repeat="endereco in enderecos">
+            <button type="text" class="btn" ng-click="editarEndereco(endereco)"ng-class="{enderecoPrincipal:endereco.principal}">{{endereco.descricao}}</button><span ng-click="excluirEndereco(endereco)" class="glyphicon glyphicon-remove"></span>
+        </span>
+    </li>
+</ul>
+<figcaption class="figure-caption"><span class="legenda">&nbsp;&nbsp;&nbsp;</span>&nbsp;Principal.</figcaption>

@@ -1,0 +1,32 @@
+{
+  "jquery": true,
+  "jasmine": true,
+  "strict": true,
+  "esnext": false,
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "freeze": true,
+  "funcscope": true,
+  "immed": true,
+  "indent": 4,
+  "latedef": false,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "quotmark": "single",
+  "shadow": "outer",
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "$": false,
+    "angular": false,
+    "_": false,
+    "moment": false,
+    "$bfTest": false,
+    "bfc": false,
+    "window": false,
+    "console": false
+  }
+}
