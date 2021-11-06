@@ -32,7 +32,7 @@ function getJsHtmlStream() {
                 spare: true,
                 quotes: true
             }))
-            .pipe($.angularTemplatecache({module: 'endereco'}))
+            .pipe($.angularTemplatecache({module: 'componentes'}))
 
         ,
         plumbedSrc([config.src + '/**/*.js'])

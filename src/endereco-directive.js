@@ -1,7 +1,7 @@
-
+(function () {
     'use strict';
-        
-    angular.module('endereco',[])
+
+    angular.module('componentes',[])
     .directive('enderecoModal', function() {
         var ddo = {};
 
@@ -19,3 +19,4 @@
         
         return ddo;
     });
+}());   
