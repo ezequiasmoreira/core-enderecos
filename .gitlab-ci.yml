@@ -24,9 +24,6 @@ build:
 
 deploy:
   stage: deploy
-  only:
-    - master
-    - tags
   script:
     - npm install
     - 'bower register "$CI_PROJECT_NAME" "$CI_PROJECT_URL".git --allow-root --config.registry.register="$NEXUS_BOWER_URL"'
