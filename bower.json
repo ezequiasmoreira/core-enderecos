@@ -1,7 +1,8 @@
 {
     "name": "core-enderecos",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "license": "MIT",
+    "author": "Ezequias Prado",
     "private": false,
     "main": "dist/core.enderecos.js",
     "ignore": [
@@ -18,5 +19,9 @@
     "dependencies": {
         "angular": "~1.4",
         "componentes": "https://github.com/ezequiasmoreira/componentes.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ezequiasmoreira/core-enderecos.git"
     }
 }
