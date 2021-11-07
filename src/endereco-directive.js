@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('componentes',[])
+    angular.module('componentes')
     .directive('enderecoModal', function() {
         var ddo = {};
 

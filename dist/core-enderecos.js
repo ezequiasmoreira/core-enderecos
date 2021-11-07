@@ -1,27 +1,5 @@
 (function () {
     'use strict';
-
-    angular.module('componentes',[])
-    .directive('enderecoModal', function() {
-        var ddo = {};
-
-        ddo.restric = 'AE';
-
-        ddo.templateUrl = 'bower_components/core-enderecos/src/endereco-modal.html';
-        
-        return ddo;
-    }).directive('enderecoInput', function() {
-        var ddo = {};
-
-        ddo.restric = 'AE';
-
-        ddo.templateUrl = 'bower_components/core-enderecos/src/endereco-input.html';
-        
-        return ddo;
-    });
-}());   
-(function () {
-    'use strict';
 	angular.module('componentes').factory('enderecoFactorySpec', function () {
 
 		var _validarEnderecoPrincipal = function (enderecos) {
@@ -133,6 +111,28 @@
                 popularEstados: _popularEstados,
                 popularCidadesPorEstado: _popularCidadesPorEstado
         };
+    });
+}());   
+(function () {
+    'use strict';
+
+    angular.module('componentes')
+    .directive('enderecoModal', function() {
+        var ddo = {};
+
+        ddo.restric = 'AE';
+
+        ddo.templateUrl = 'bower_components/core-enderecos/src/endereco-modal.html';
+        
+        return ddo;
+    }).directive('enderecoInput', function() {
+        var ddo = {};
+
+        ddo.restric = 'AE';
+
+        ddo.templateUrl = 'bower_components/core-enderecos/src/endereco-input.html';
+        
+        return ddo;
     });
 }());   
 angular.module("componentes").run(["$templateCache", function($templateCache) {$templateCache.put("endereco-input.html","<label for=\"endereco\">Endereços&nbsp;<span class=\"glyphicon glyphicon-plus botao-adicionar\" data-target=\"#modalEndereco\" data-toggle=\"modal\"></span></label><ul class=\"list-group\"><li class=\"list-group-item\">&nbsp; <span class=\"btn btn-sm\" ng-repeat=\"endereco in enderecos\"><button type=\"text\" class=\"btn\" ng-click=\"editarEndereco(endereco)\" ng-class=\"{enderecoPrincipal:endereco.principal}\">{{endereco.descricao}}</button><span ng-click=\"excluirEndereco(endereco)\" class=\"glyphicon glyphicon-remove\"></span></span></li></ul><figcaption class=\"figure-caption\"><span class=\"legenda\">&nbsp;&nbsp;&nbsp;</span>&nbsp;Principal.</figcaption>");
